@@ -2,31 +2,48 @@ import profile from '../assets/me.png'
 
 const ABOUT_ME = {
     name: 'Jonathan Li',
+    role: 'Computer Engineering @ Toronto Metropolitan University',
     body: "Hi, I'm Jonathan! A Computer Engineering student at Toronto Metropolitan University focused on software development and data engineering. I enjoy taking messy datasets and building reliable ETL pipelines, automated workflows, and shipping software. I do my best to build software that solves real-world problems and makes people's lives easier.",
     skills: ['TypeScript', 'React', 'Python', 'SQL', 'ETL'],
 }
 
 function About() {
     return (
-        <section>
-            <div className="flex items-center px-60 pt-12">
-                <div className='flex items-center gap-4'>
-                    <img src={profile} alt="Jonathan Li" className='size-80 rounded-full'></img>
-                    <div className="flex flex-col gap-4">
-                        <h1 className='text-3xl font-bold'>{ABOUT_ME.name}</h1>
-                        <p className='text-xl'>{ABOUT_ME.body}</p>
-                        <div className='flex flex-wrap gap-2'>
-                            {ABOUT_ME.skills.map((skill) => (
-                            <span key={skill} className='bg-surface border-border rounded-full px-2'>
-                                {skill}
-                            </span>
-                        ))}
-                        </div>
+        <section id="about" className="shell py-16 sm:py-24">
+            <div className="flex flex-col items-center gap-10 text-center md:flex-row md:items-start md:gap-14 md:text-left">
+                <img
+                    src={profile}
+                    alt="Jonathan Li"
+                    width={256}
+                    height={256}
+                    className="size-40 shrink-0 rounded-full object-cover ring-4 ring-surface sm:size-56 md:size-64"
+                />
+
+                <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-2">
+                        <h1 className="text-3xl font-bold tracking-tight text-ink-strong sm:text-4xl">
+                            {ABOUT_ME.name}
+                        </h1>
                     </div>
+
+                    <p className="max-w-prose text-base leading-relaxed sm:text-lg">
+                        {ABOUT_ME.body}
+                    </p>
+
+                    <ul className="flex flex-wrap justify-center gap-2 md:justify-start">
+                        {ABOUT_ME.skills.map((skill) => (
+                            <li
+                                key={skill}
+                                className="rounded-full border border-border bg-surface px-3 py-1 text-sm font-medium text-ink"
+                            >
+                                {skill}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-                    
             </div>
         </section>
     )
 }
+
 export default About;
