@@ -4,15 +4,12 @@
   --color-background: #EDEDF3;
   --color-surface: #ffffff;
   --color-border: #C7CEE3;
-
   --color-blue: #D4DAF1;
   --color-blue-light: #A3B6D4;
 
   --color-ink: #525C6D;
   --color-ink-strong: #2A3140;
   --color-ink-muted: #8b93a1;
-
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Shared page gutter: one place to change the site's content width */

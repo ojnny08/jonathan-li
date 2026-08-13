@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+
+# Local AI assistant context — not for the public repo
+/Claude.md
+/.claude/

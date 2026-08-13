@@ -15,7 +15,7 @@ export default function Stats () {
     ]
 
     return (
-        <section className="shell pb-16 sm:pb-24">
+        <section className="shell sm:mb-16 ">
             <div className="grid grid-cols-1 overflow-hidden rounded-2xl sm:grid-cols-3">
                 {STATS.map(({ label, value }, index) => (
                     <div
