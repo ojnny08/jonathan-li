@@ -13,7 +13,7 @@ function NavBar () {
             <nav className="shell flex items-center justify-between p-4">
                 <a
                     href="#top"
-                    className="font-semibold tracking-tight text-ink-strong transition-colors hover:text-blue-light"
+                    className="text-lg font-semibold tracking-tight text-ink-strong"
                 >
                     {NAVBAR_META.name}
                 </a>
@@ -23,7 +23,7 @@ function NavBar () {
                         <li key={href}>
                             <a
                                 href={href}
-                                className="block rounded-md px-3 py-1 text-sm text-ink transition-colors hover:bg-blue hover:text-ink-strong sm:text-base"
+                                className="block rounded-md px-3 py-1 text-sm text-ink"
                             >
                                 {label}
                             </a>

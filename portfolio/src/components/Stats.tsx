@@ -16,17 +16,15 @@ export default function Stats () {
 
     return (
         <section className="shell sm:mb-16 ">
-            <div className="grid grid-cols-1 overflow-hidden rounded-2xl sm:grid-cols-3">
-                {STATS.map(({ label, value }, index) => (
+            <div className="grid grid-cols-1 overflow-hidden gap-5  sm:grid-cols-3">
+                {STATS.map(({ label, value }) => (
                     <div
                         key={label}
-                        className={`flex flex-col items-center gap-1 px-6 py-10 ${
-                            index % 2 === 0 ? 'bg-blue' : 'bg-blue-light'
-                        }`}>
-                        <span className="text-4xl font-bold tabular-nums text-ink-strong">
+                        className={`flex flex-col rounded-full items-center px-6 py-10 bg-background-dark`}>
+                        <span className="text-3xl font-bold tabular-nums text-ink-cream">
                             {value}
                         </span>
-                        <span className="text-sm font-medium text-ink">
+                        <span className="text-sm font-medium text-ink-cream">
                             {label}
                         </span>
                     </div>

@@ -1,21 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #EDEDF3;
-  --color-surface: #ffffff;
-  --color-border: #C7CEE3;
-  --color-blue: #D4DAF1;
-  --color-blue-light: #A3B6D4;
+  --color-background: #FFFBFA;
+  --color-background-dark: #00203E;
+  --color-background-grey: #787878;
 
-  --color-ink: #525C6D;
-  --color-ink-strong: #2A3140;
+  --color-surface: #ffffff;
+  --color-border-dark: #00203E;
+  --color-border-cream: #FFFAEA;
+  --color-border-grey: #00203E;
+  --color-blue: #00203E;
+  --color-blue-light: #FFFBFA;
+
+  --color-ink-dark: #00203E;
+  --color-ink-white: #FFFBFA;
+  --color-ink-cream: #FFFAEA;
   --color-ink-muted: #8b93a1;
+
+  /* Type scale — ~1.25 ratio. Sizes get tighter line-height as they grow,
+     because long lines need breathing room and headings don't. */
+  --text-xs: 0.75rem;      /* 12px — stack pills */
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.875rem;     /* 14px — meta, dates, card copy */
+  --text-sm--line-height: 1.55;
+  --text-base: 1rem;       /* 16px — default body */
+  --text-base--line-height: 1.65;
+  --text-lg: 1.125rem;     /* 18px — card titles, About paragraph */
+  --text-lg--line-height: 1.6;
+  --text-xl: 1.375rem;     /* 22px */
+  --text-xl--line-height: 1.4;
+  --text-2xl: 1.75rem;     /* 28px — section headings */
+  --text-2xl--line-height: 1.3;
+  --text-3xl: 2.25rem;     /* 36px — stat numbers */
+  --text-3xl--line-height: 1.2;
+  --text-4xl: 3rem;        /* 48px — your name, once per page */
+  --text-4xl--line-height: 1.1;
 }
 
 /* Shared page gutter: one place to change the site's content width */
 @utility shell {
   margin-inline: auto;
-  max-width: 64rem;
+  max-width: 75rem;
   padding-inline: 1.5rem;
 }
 

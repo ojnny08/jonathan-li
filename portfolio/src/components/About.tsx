@@ -21,12 +21,12 @@ function About() {
 
                 <div className="flex flex-col gap-5">
                     <div className="gap-2">
-                        <h1 className="text-4xl font-bold text-ink-strong">
+                        <h1 className="text-4xl font-bold text-ink-dark">
                             Hello, I'm {ABOUT_ME.name}
                         </h1>
                     </div>
 
-                    <p className="max-w-prose text-base text-lg">
+                    <p className="max-w-prose text-lg">
                         {ABOUT_ME.body}
                     </p>
 
@@ -34,7 +34,7 @@ function About() {
                         {ABOUT_ME.skills.map((skill) => (
                             <li
                                 key={skill}
-                                className="rounded-full border border-border bg-surface px-3 text-sm font-medium text-ink"
+                                className="rounded-full border border-border bg-background- px-3 text-sm font-medium text-ink-dark"
                             >
                                 {skill}
                             </li>
