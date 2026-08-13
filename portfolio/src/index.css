@@ -35,12 +35,16 @@
   --text-3xl--line-height: 1.2;
   --text-4xl: 3rem;        /* 48px — your name, once per page */
   --text-4xl--line-height: 1.1;
+
+  /* Positive x/y pushes the shadow down-and-right, reading as a light source
+     at the top left. Tinted navy rather than black to suit the cream bg. */
+  --shadow-card: 8px 8px 20px -2px rgb(0 32 62 / 0.22);
 }
 
 /* Shared page gutter: one place to change the site's content width */
 @utility shell {
   margin-inline: auto;
-  max-width: 75rem;
+  max-width: 65rem;
   padding-inline: 1.5rem;
 }
 
