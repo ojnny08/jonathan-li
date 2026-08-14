@@ -9,7 +9,7 @@ const ABOUT_ME = {
 
 function About() {
     return (
-        <section id="about" className="my-20">
+        <section id="about">
             <div className="flex flex-col items-center gap-10 text-center md:flex-row md:items-start md:gap-14 md:text-left">
                 <img
                     src={profile}
@@ -19,9 +19,9 @@ function About() {
                     className="size-50 rounded-full object-cover sm:size-56 md:size-64"
                 />
 
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-4">
                     <div className="gap-2">
-                        <h1 className="text-4xl font-bold text-ink-dark">
+                        <h1 className="text-3xl text-ink-dark">
                             Hello, I'm {ABOUT_ME.name}
                         </h1>
                     </div>

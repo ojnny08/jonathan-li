@@ -9,11 +9,11 @@ const NAVBAR_META = {
 
 function NavBar () {
     return (
-        <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur">
+        <header className="sticky top-0 z-40 shadow-md bg-background/80 backdrop-blur">
             <nav className="shell flex items-center justify-between p-4">
                 <a
                     href="#top"
-                    className="text-lg font-semibold tracking-tight text-ink-strong"
+                    className="text-lg tracking-tight text-ink-strong"
                 >
                     {NAVBAR_META.name}
                 </a>
@@ -23,7 +23,7 @@ function NavBar () {
                         <li key={href}>
                             <a
                                 href={href}
-                                className="block rounded-md px-3 py-1 text-sm text-ink"
+                                className="px-2 py-1 text-md text-ink"
                             >
                                 {label}
                             </a>

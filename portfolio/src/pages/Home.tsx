@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <div id="top" className="min-h-dvh">
         <NavBar />
-        <main className='shell'>
+        <main className='shell flex flex-col gap-20 py-20'>
             <About />
             <Stats />
             <Experience />

@@ -15,12 +15,12 @@ export default function Stats () {
     ]
 
     return (
-        <section className="shell sm:mb-16 ">
-            <div className="grid grid-cols-1 overflow-hidden gap-5  sm:grid-cols-3">
+        <section>
+            <div className="grid grid-cols-1 overflow-hidden gap-5 sm:grid-cols-3">
                 {STATS.map(({ label, value }) => (
                     <div
                         key={label}
-                        className={`flex flex-col rounded-full items-center px-6 py-10 bg-background-dark`}>
+                        className={`flex flex-col rounded-full items-center px-5 py-5 bg-background-dark`}>
                         <span className="text-3xl font-bold tabular-nums text-ink-cream">
                             {value}
                         </span>

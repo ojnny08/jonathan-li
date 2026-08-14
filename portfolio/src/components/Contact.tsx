@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function Contact() {
     return (
-        <section id="contact" className="my-20 flex flex-col items-center gap-5 text-center">
+        <section id="contact" className="flex flex-col items-center gap-5 text-center">
             <h2 className="text-2xl text-ink-dark">
                 Ready To Connect
             </h2>
@@ -28,7 +28,7 @@ export default function Contact() {
                     Jonathan.li2051@gmail.com
                 </a>
                 <a
-                    href="https://www.linkedin.com/in/jonathan-li-738a38237/"
+                    href="https://www.linkedin.com/in/jonathan-li-738a36237/"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-3 rounded-full bg-background-dark px-4 py-2 text-lg font-medium text-ink-cream">

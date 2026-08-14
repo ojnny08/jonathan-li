@@ -13,7 +13,7 @@ const PROJECTS: Projects[] = [
 export default function Projects() {
     return (
         <section id="projects">
-            <div className="text-2xl font-bold text-ink-strong pb-4">Projects</div>
+            <div className="text-2xl text-ink-strong pb-4">Projects</div>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                     {PROJECTS.map(({name, details, code, link, stack} ) => (
                         <div

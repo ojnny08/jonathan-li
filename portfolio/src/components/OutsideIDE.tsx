@@ -14,17 +14,31 @@ const PHOTOS: Photo[] = [
     { src: '', alt: '', caption: 'Lifting' },
 ]
 
+const HOBBIES = ["Cycling", "Hiking", "Gym"];
+
 export default function OutsideIDE() {
     return (
-        <section id="outsideIDE" className="my-15 ">
+        <section id="outsideIDE">
             <h2 className="text-2xl flex justify-center item-center text-ink-dark pb-5">
                 {OUTSIDE.heading}
             </h2>
 
             <div className="mt-6 flex flex-col justify-center items-center gap-10 md:flex-row md:gap-14">
-                <p className="w-100 text-lg text-ink-dark">
-                    {OUTSIDE.body}
-                </p>
+                <div className="flex w-100 flex-col gap-4">
+                    <p className="text-lg text-ink-dark">
+                        {OUTSIDE.body}
+                    </p>
+
+                    <ul className="flex flex-wrap justify-center gap-2">
+                        {HOBBIES.map((hobby) => (
+                            <li
+                                key={hobby}
+                                className="w-18 rounded-full border border-border-dark text-center text-xs text-ink-dark">
+                                {hobby}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
 
                 <div className="h-72 w-72 ">
                     <Stack cards={PHOTOS} />
