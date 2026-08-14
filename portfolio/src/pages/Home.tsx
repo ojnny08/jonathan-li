@@ -1,4 +1,5 @@
 import About from '../components/About'
+import Contact from '../components/Contact'
 import Experience from '../components/Experience'
 import NavBar from '../components/NavBar'
 import OutsideIDE from '../components/OutsideIDE'
@@ -15,6 +16,7 @@ export const Home = () => {
             <Experience />
             <Projects />
             <OutsideIDE />
+            <Contact />
         </main>
     </div>
   )

@@ -1,4 +1,3 @@
-
 type Projects = {
     name: string
     code: string
