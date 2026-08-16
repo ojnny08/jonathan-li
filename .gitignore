@@ -4,3 +4,4 @@ node_modules
 # Local AI assistant context — not for the public repo
 /Claude.md
 /.claude/
+.env
