@@ -1,15 +1,17 @@
 import { useGithubStats } from "../hooks/useGithubStats"
+import { useStravaStats } from "../hooks/useStravaStats";
 
 type Stat = {
     label: string
-    value: string | number
+    value: string | number | null
 }
 
 export default function Stats () {
     const { commits } = useGithubStats();
+    const { distance } = useStravaStats();
 
     const STATS: Stat[] = [
-        { label: 'Kilometres run', value: '1,200' },
+        { label: 'Kilometres Ridden', value: distance },
         { label: 'Commits today', value: commits ?? '—' },
         { label: 'Cups of coffee', value: '∞' },
     ]
