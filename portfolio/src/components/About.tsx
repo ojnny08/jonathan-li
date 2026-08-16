@@ -3,7 +3,7 @@ import profile from '../assets/me.png'
 const ABOUT_ME = {
     name: 'Jonathan Li',
     role: 'Computer Engineering @ Toronto Metropolitan University',
-    body: "A Computer Engineering student at Toronto Metropolitan University focused on software development and data engineering. I enjoy taking messy datasets and building reliable ETL pipelines, automated workflows, and shipping software. I do my best to build software that solves real-world problems and makes people's lives easier.",
+    body: "A Computer Engineering student at Toronto Metropolitan University focused on software development and data engineering. I enjoy taking messy datasets and building reliable ETL pipelines, automated workflows, and shipping software. I do my best to build software that solves real-world problems and help make people's lives easier.",
     skills: ['TypeScript', 'React', 'Python', 'SQL', 'ETL'],
 }
 
