@@ -11,8 +11,8 @@ export default function Stats () {
     const { distance } = useStravaStats();
 
     const STATS: Stat[] = [
-        { label: 'Kilometres Ridden', value: distance },
-        { label: 'Commits today', value: commits ?? '—' },
+        { label: 'Kilometres Ridden', value: distance?.toLocaleString() ?? '—' },
+        { label: 'Commits today', value: commits ?? '0 :(' },
         { label: 'Cups of coffee', value: '∞' },
     ]
 

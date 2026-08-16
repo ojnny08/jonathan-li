@@ -1,7 +1,12 @@
-export const fetchStravaDistance = async () => {
-    const res = await fetch('/api/strava/');
+type StravaDistance = {
+    km: number
+}
+
+export const fetchStravaDistance = async (): Promise<number> => {
+    const res = await fetch('/api/strava');
 
     if (!res.ok) throw new Error(`strava api: ${res.status}`);
 
-    return res.json();
+    const data: StravaDistance = await res.json();
+    return data.km;
 }

@@ -1,6 +1,4 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-// .js extension is the nodenext ESM convention; TS resolves it to strava.ts
-
 
 type StravaToken = {
     access_token: string
@@ -11,8 +9,6 @@ type StravaToken = {
 type StravaAthlete = {
     bikes: { distance: number, name: string}[]
 }
-
-
 
 async function getAccessToken(): Promise<string> {
     const res = await fetch('https://www.strava.com/oauth/token', {
@@ -46,10 +42,13 @@ export default async function handler(_req: VercelRequest, res: VercelResponse) 
     try {
         const accessToken = await getAccessToken()
         const athlete = await stravaGet<StravaAthlete>('/athlete', accessToken)
-        const meters = athlete.bikes.reduce((sum, bike) => sum + bike.distance, 0)
+
+        // bikes is only present on the detailed athlete, which needs profile:read_all
+        const june = athlete.bikes?.find(bike => bike.name === 'June')
+        if (!june) throw new Error('bike "June" not found — check the token scope')
 
         res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate=86400')
-        res.status(200).json({ km: Math.round(meters / 1000) })
+        res.status(200).json({ km: Math.round(june.distance / 1000) })
 
     } catch (err) {
         console.error(err)

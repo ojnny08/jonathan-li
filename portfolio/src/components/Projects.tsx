@@ -15,7 +15,7 @@ export default function Projects() {
         <section id="projects">
             <div className="text-2xl text-ink-strong pb-4">Projects</div>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-                    {PROJECTS.map(({name, details, code, link, stack} ) => (
+                    {PROJECTS.map(({name, details, stack} ) => (
                         <div
                             key={name}
                             className="flex flex-col rounded-xl border border-cream bg-background p-5">
