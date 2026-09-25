@@ -1,6 +1,7 @@
 const ABOUT_ME = {
     role: 'Computer Engineering @ Toronto Metropolitan University',
     body: "A Computer Engineering student at Toronto Metropolitan University focused on software development and data engineering.",
+    
 }
 
 function About() {
