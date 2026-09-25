@@ -25,13 +25,13 @@ const HOBBIES = ["Cycling", "Hiking", "Fishing"];
 export default function OutsideIDE() {
     return (
         <section id="outsideIDE">
-            <h2 className="text-2xl flex justify-center item-center text-ink-dark pb-5">
+            <h2 className="text-2xl flex justify-center item-center pb-5">
                 {OUTSIDE.heading}
             </h2>
 
             <div className="mt-6 flex flex-col justify-center items-center gap-10 md:flex-row md:gap-14">
                 <div className="flex w-100 flex-col gap-4">
-                    <p className="text-lg text-center text-ink-dark">
+                    <p className="text-lg text-center">
                         {OUTSIDE.body}
                     </p>
 
@@ -39,7 +39,7 @@ export default function OutsideIDE() {
                         {HOBBIES.map((hobby) => (
                             <li
                                 key={hobby}
-                                className="w-18 rounded-full border border-border-dark text-center text-xs text-ink-dark">
+                                className="w-18 rounded-full border border-border-dark text-center text-xs">
                                 {hobby}
                             </li>
                         ))}
