@@ -5,3 +5,5 @@ node_modules
 /Claude.md
 /.claude/
 .env
+# Claude Code personal settings
+portfolio/.claude/settings.local.json

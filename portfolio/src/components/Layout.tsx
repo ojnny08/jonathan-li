@@ -1,6 +1,7 @@
 import { Link, Outlet } from 'react-router-dom'
 import { FaGithub, FaLinkedin, FaStrava, FaEnvelope } from 'react-icons/fa6'
 import FishingRod from './ui/FishingRod'
+import Waves from './ui/Waves'
 
 
 const SOCIAL = [
@@ -39,6 +40,8 @@ export default function Layout() {
           </div>
         </div>
       </main>
+
+      <Waves className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto max-w-2xl opacity-30" />
     </div>
   )
 }
